@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif; 
+  background-color: rgb(252, 255, 247);
+}
+
+.calculator {
+    width: 320px; 
+    border: 2px solid black; 
+    border-radius: 10px; 
+    padding: 20px; 
+    margin: 20px auto; 
+    background-color: rgba(2, 1, 34); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+.button{
+  width: 66px;
+  padding: 20px;
+  margin: 0 3px;
+  border: none;
+  border-radius: 25%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.815);
+  color: orange;
+  font-size: larger;
+  animation: border;
+}
+
+.button:hover{
+  background-color: rgba(0, 0, 0, 0.63);
+}
+
+.button:active{
+  background-color: rgba(0, 0, 0, 0.479);
+  border-radius: 5px;
+}
+
+@keyframes border{
+  from{border-radius: 25%;}
+  to{border-radius: 9px;}
+}
+
+.row{
+  margin: 8px 0;
+  /* border: 2px solid black; */
+}
+.row input{
+  width: 291px;
+  font-size: 20px;
+    margin: 0;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+.text-center{
+    text-align: center;
+    /* color: rgb(153, 44, 4); */
+  }
+  
+  .bg-red{
+    background: red;
+  }
+  
+  .mx-auto{
+    margin: auto;
+  }
+  
+  .flex{
+    display:flex;
+  } 
+  .flex-col{
+    flex-direction: column;
+  }
+  
+  .items-center{
+    align-items: center;
+  }
+  #clear{
+    background-color: orangered;
+  }
+
